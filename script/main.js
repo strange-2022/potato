@@ -105,4 +105,64 @@ function monitor(os_data){
 /**
  * 2022 0915 thur 1421 现在有点热，需要洗一下，
  * 对 系统分层 处理 计算机组成原理 机器语言 汇编 高级语言
+ * 微积分用来算什么的呢？
+ * 一步一步来，二进制 
 */
+
+/**
+ * 二进制转八进制
+ * return a octal number system -number from binary.
+*/
+function binaryToOctalNumberSystem(binaryString){
+
+}
+/**
+ * 二进制->十六进制
+*/
+/**
+ * 二进制->十进制
+ * this guy is singing in the rain.
+ * rains raining rained rainy
+ * water that falls from the sky in separate drops.
+ * the man knows so many girl's beauty brands.
+ * brand branding branded 
+ * a type of product made by a particular company.
+ * the boy is measuring the size of the turtle.
+ * measure measures measured measurer
+ * to find the size, quantity , etc, of something in standard units. 
+*/
+/**
+ * 十进制->二进制
+*/
+
+
+/**
+ * 内核引导：
+ * [org 0]
+ *      jmp 07c0h:start
+ *      msg db '',$0
+ * start:
+ *      mov ax,cs
+ *      mov ds,ax
+ *      mov es,ax
+ *      mov si,msg
+ * print:
+ *      lodsb
+ *      cmp al,0
+ *      je hang
+ *      mov ah,0eh
+ *      mov bx,7
+ *      int 10h
+ *      jmp print
+ * hang:
+ *      jmp hang
+ *      resb 0x7dfe-($-$$)
+ *      dw 0xAA55
+ *      db 0xf0,0xff,0x00,0x00,0x00,0x00
+ *      resb 4600
+ *      db 0xf0,
+ *      resb 1469342
+ * 
+ * 
+*/
+
